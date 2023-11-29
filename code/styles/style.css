@@ -1,0 +1,233 @@
+/********** GENERALES **********/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0 0 30px;
+}
+
+.alert {
+    display: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.input-index {
+    border-radius: 0.2rem;
+    width: 70px;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+hr {
+    width: 50%;
+}
+
+.gras {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+/********** TITRES **********/
+.nom-projet {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.projet-ue {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.noms-groupe {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tilde-titre {
+    text-align: center;
+}
+
+.titre-page {
+    padding: 1rem;
+}
+
+/********** FORMULAIRE **********/
+#formulaire-nb .container {
+    margin-top: 1px;
+    padding: 0 2rem;
+}
+
+#formulaire-nb {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.conteneur-formulaire {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/********** CALCUL AFFECTATION **********/
+
+#calcul-affectation {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nom-fichier-choisi {
+    display: none;
+    margin-top: 1.5rem;
+    /* margin-left: 1rem; */
+    /* text-align: center; */
+}
+
+.boutons-fichiers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+#download-fichier {
+    display: none;
+    margin-left: 20px;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.span-replier {
+    position: absolute;
+
+    top: 35px;
+    right: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/********** AFFICHAGE DES PREFERENCES **********/
+
+#afficher-preferences {
+    display: none;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+
+    /* Utilisation des médias queries pour gérer la disposition en dessous des éléments */
+    @media (max-width: 600px) {
+        #afficher-preferences.display="none";
+        /* Lorsque la largeur de la fenêtre est inférieure à 600px, la div prend toute la largeur */
+    }
+}
+
+#afficher-preferences>table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#afficher-preferences.table-pref.row {
+    text-align: center;
+}
+
+#afficher-preferences.table-pref.row.table thead {
+    vertical-align: top;
+    /* Alignement vertical en haut */
+}
+
+.table-pref {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+
+/********** AFFICHAGE DU MARRIAGE **********/
+
+#afficher-mariages {
+    display: none;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#afficher-mariages .row {
+    display: block;
+}
+
+.conteneur-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #c0c0c0;
+}
+
+/********** AFFICHAGE DE LA SATISFACTION **********/
+#afficher-satisfaction {
+    display: none;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#afficher-satisfaction .satisfaction {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.satisfaction-etu,
+.satisfaction-etab,
+.satisfaction-globale {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
